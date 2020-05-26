@@ -21,43 +21,70 @@ if($status==false){
 }else{
   //Selectデータの数だけ自動でループしてくれる $resultの中に「カラム名」が入ってくるのでそれを表示させる例
   while( $result = $stmt->fetch(PDO::FETCH_ASSOC)){
-    $view .= "<p>";
-    $view .= $result["id"]."name:".$result["name"]."&email:".$result["email"]."&country:".$result["country"]."&people".$result["people"];
-    $view .= "</p>";
+    $view .= '<tr>'.
+    '<td>'.$result["id"].'</td>'.
+    '<td>'.$result["name"].'</td>'.
+    '<td>'.$result["email"].'</td>'.
+    '<td>'.$result["telephone"].'</td>'.
+    '<td>'.$result["country"].'</td>'.
+    '<td>'.$result["people"].'</td>'.
+    '<td>'.$result["arrive"].'</td>'.
+    '<td>'.$result["depart"].'</td>'.
+    '<td>'.$result["room_type"].'</td>'.
+    '<td>'.$result["others"].'</td>'.
+    '<td>'.$result["indate"].'</td>'.
+
+    '</tr>';
+ 
+    // $viewName .= $result["name"];
+    // $viewEmail .= $result["email"];
+    // $viewTelephone .= $result["telephone"];
+    // $viewCountry .= $result["country"];
+    // $viewPeople .= $result["people"];
+    // $viewArrive .= $result["arrive"];
+    // $viewDepart .= $result["depart"];
+    // $viewRomm .= $result["romm"];
+    // $viewOthers .= $result["others"];
+    // $viewIndate .= $result["indate"];
   }
 }
 ?>
 
 
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>booking list</title>
-<link rel="stylesheet" href="css/range.css">
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<style>div{padding: 10px;font-size:16px;}</style>
-</head>
-<body id="main">
-<!-- Head[Start] -->
-<header>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-      <a class="navbar-brand" href="index.php">Booking List</a>
-      </div>
+<?php
+$title = 'booking list- ';
+include('head.php');
+?>
+<body>
+  <header>
+    <div class="container">
+        <div class="mainbg">Hans Hotel Japan</div>
     </div>
-  </nav>
-</header>
-<!-- Head[End] -->
+  </header>
 
-<!-- Main[Start] $view-->
-<div>
-    <div class="container jumbotron"><?=$view?></div>
-</div>
-<!-- Main[End] -->
+  <table class="table">
+          <thead>
+            <tr>
+              <th class="th1">id</th>
+              <th class="th2">Name</th>
+              <th class="th3">Email</th>
+              <th class="th4">Telephone</th>
+              <th class="th5">country</th>
+              <th class="th6">No. of People</th>
+              <th class="th7">Arrive date</th>
+              <th class="th8">Depart date</th>
+              <th class="th9">Room type</th>
+              <th class="th10">others</th>
+              <th class="th10">input date</th>
+            </tr>
+          </thead>
+          <tbody>
+              <?=$view?>
+            
+          
+          </tbody>
+        </table>
+
 
 </body>
 </html>

@@ -1,0 +1,12 @@
+.table th {
+  border: solid #614b2b;
+  background-color: #6d5838;
+  color: whitesmoke;
+  padding: 5px 10px;
+}
+/* 追加データ */
+.table td {
+  border: solid #6d5838;
+  padding: 5px 10px;
+  text-align: center;
+}

@@ -1,21 +1,15 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hans Hotel Japan</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link href="css/style.css?v=<?php echo time(); ?>" rel="stylesheet" type="text/css" />
-  <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
-</head>
+<?php
+$title = ' ';
+include('head.php');
+?>
 
 <body>
   <header>
-    <!-- <h1>Hans Hotel Japan</h1> -->
+    <div class="container">
+        <div class="mainbg">Hans Hotel Japan</div>
+    </div>
   </header>
-  <div class="container">
-      <div class="mainbg">Hans Hotel Japan</div>
-  </div>
+  
 
 
   <section class="form">
