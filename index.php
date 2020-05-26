@@ -19,7 +19,7 @@
 
 
   <section class="form">
-    <form method="post" action="booking.php" >
+    <form method="post" action="booking_insert.php" >
       <section class="guest data"> 
         <h2>BOOKING & CONTACT</h2>
         <hr>
@@ -41,22 +41,29 @@
         <h2>DETAILS</h2>
         <hr>
         <ul>
-        <li> <label for="arrive">Arrive</label>
-        <input type="date" name="arrive" id="arrive">
-        <label for="depart">Depart</label>
-        <input type="date" name="depart" id="depart"></li>
         <li><label for="people">People</label>
-        <input type="number" name="people" id="people">
-        <label for="room">Room</label>
-        <select name="Room" id="room" >
-          <option value="sng">SNG room</option>
-          <option value="twn">TWN room</option>
-          <option value="dbl">DBL room</option>
-          <option value="trp">TRP room</option>
-          <option value="quad">QUAD room</option>
-        </select></li>
-        <li> <label for="others">Others</label>
-        <textarea name="" id="others" cols="30" rows="10"></textarea></li>
+        <input type="number" name="people" id="people"></li>
+        <li><label for="arrive">Arrive</label>
+        <input type="date" name="arrive" id="arrive"></li>
+        <li><label for="depart">Depart</label>
+        <input type="date" name="depart" id="depart"></li>
+
+
+        
+        <li>Room type</li>
+        <li class="room_type">
+          <label for="single room">SNG</label>
+          <input type="radio" name="room_type" value="single room" id="single room">
+          <label for="twin room">TWN</label>
+          <input type="radio" name="room_type" value="twin room" id="twin room">
+          <label for="trp room">TRP</label>
+          <input type="radio" name="room_type" value="triple room" id="trp room">
+          <label for="quad room">QUAD</label>
+          <input type="radio" name="room_type" value="quadruple room" id="quad room">
+        </li>
+
+        <li><label for="others">Others</label>
+        <textarea name="others" id="others" cols="30" rows="10"></textarea></li>
 
         <button type="submit" class="btn">Submit</button>
         </ul>
