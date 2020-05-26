@@ -26,7 +26,7 @@ if($status==false){
     '<td>'.$result["name"].'</td>'.
     '<td>'.$result["email"].'</td>'.
     '<td>'.$result["telephone"].'</td>'.
-    '<td>'.$result["country"].'</td>'.
+    // '<td>'.$result["country"].'</td>'.
     '<td>'.$result["people"].'</td>'.
     '<td>'.$result["arrive"].'</td>'.
     '<td>'.$result["depart"].'</td>'.
@@ -51,10 +51,17 @@ if($status==false){
 ?>
 
 
-<?php
-$title = 'booking list- ';
-include('head.php');
-?>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <title>Hans Hotel東京</title> -->
+  <title>Hans Hotel Japan</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link href="css/liststyle.css?v=<?php echo time(); ?>" rel="stylesheet" type="text/css" />
+
+</head>
 <body>
   <header>
     <div class="container">
@@ -69,11 +76,11 @@ include('head.php');
               <th class="th2">Name</th>
               <th class="th3">Email</th>
               <th class="th4">Telephone</th>
-              <th class="th5">country</th>
-              <th class="th6">No. of People</th>
+              <!-- <th class="th5">country</th> -->
+              <th class="th6">N.O.P</th>
               <th class="th7">Arrive date</th>
               <th class="th8">Depart date</th>
-              <th class="th9">Room type</th>
+              <th class="th9">Room</th>
               <th class="th10">others</th>
               <th class="th10">input date</th>
             </tr>

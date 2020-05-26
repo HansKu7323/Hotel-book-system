@@ -8,16 +8,13 @@ body {
   margin: 0 auto;
   font-size: 16px;
   font-family: Verdana, sans-serif;
-  color: #333;
+  background-color: #333;
+  color: #fff;
 }
 
-
-
-header{
-
- 
+label{
+  color: 	#ACD6FF;
 }
-
 
 .container {
   width: 1080px;
@@ -52,9 +49,28 @@ h2{
   padding: 12px;
   width: 100%;
   margin-bottom: 18px;
-  color: #888;
   font-size: 16px;
   border-radius: 5px;
+}
+
+.room_type input{
+  width: 35px;
+}
+
+.room{
+  border: 1px solid #fff;
+  margin-bottom: 25px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px;
+}
+
+.roomtitle{
+  color: 	#ACD6FF;
+}
+
+.room label{
+  color: #fff;
 }
 
 select{
@@ -88,6 +104,7 @@ textarea{
 
 .btn:hover{
   opacity: 0.8;
+  cursor: pointer;
 }
 
 

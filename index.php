@@ -1,7 +1,13 @@
-<?php
-$title = ' ';
-include('head.php');
-?>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <title>Hans Hotel東京</title> -->
+  <title>Hans Hotel Japan</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link href="css/style.css?v=<?php echo time(); ?>" rel="stylesheet" type="text/css" />
+</head>
 
 <body>
   <header>
@@ -44,16 +50,18 @@ include('head.php');
 
 
         
-        <li>Room type</li>
+        <li class="roomtitle">Room type</li>
         <li class="room_type">
-          <label for="single room">SNG</label>
-          <input type="radio" name="room_type" value="single room" id="single room">
-          <label for="twin room">TWN</label>
-          <input type="radio" name="room_type" value="twin room" id="twin room">
-          <label for="trp room">TRP</label>
-          <input type="radio" name="room_type" value="triple room" id="trp room">
-          <label for="quad room">QUAD</label>
-          <input type="radio" name="room_type" value="quadruple room" id="quad room">
+          <div class="room">
+            <label for="single">SNG</label>
+            <input type="radio" name="room_type" value="single" id="single">
+            <label for="twin">TWN</label>
+            <input type="radio" name="room_type" value="twin" id="twin">
+            <label for="trp">TRP</label>
+            <input type="radio" name="room_type" value="triple" id="trp">
+            <label for="quad">QUAD</label>
+            <input type="radio" name="room_type" value="quad" id="quad">
+          </div>
         </li>
 
         <li><label for="others">Others</label>
