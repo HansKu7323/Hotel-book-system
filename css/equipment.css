@@ -14,6 +14,7 @@ body {
   margin: 0 auto;
 }
 
+/*----- header -----*/
 header{
   text-align: center;
   background-color: #333;
@@ -30,6 +31,7 @@ header p{
   margin-bottom: 10px;
 }
 
+/*----- nav -----*/
 .nav_list{
   display: flex;
   justify-content: space-between;
@@ -45,42 +47,71 @@ margin: 25px 0;
 }
 
 
-
-/* ------ slider -------- */
-#slider{
-  margin: 0 auto ;
-  width: 720px;
-  height: 400px;
-  overflow: hidden;
+/*----- main -----*/
+h2{
+  font-size: 35px;
+  font-weight: normal;
 }
 
-#slider .slides{
-  display: block;
-  width: 7920px;
-  height: 400px;
-  margin: 0;
-  padding: 0;
+.link_bar{
+  display: flex;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+.link_item{
+  margin-right: 30px;
 }
 
-#slider .slide{
-  float: left;
-  list-style: none;
-  width: 720px;
-  height: 400px;
+/*----- section -----*/
+section{
+  margin-bottom: 20px;
+}
+h3{
+  font-size: 25px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+.imgbox{
+  width: 300px;
 }
 
-img{
+.imgbox>img{
   width: 100%;
 }
 
-/*------- 紹介 -------*/
-.text_box{
-  text-align: center;
-  line-height: 26px;
-  margin: 0 0 20px 0;
+.mainbox{
+  display: flex;
+  flex-wrap: wrap;
+}
+.mainbox_item{
+  margin-right: 20px;
 }
 
+table{
+  background: #ffeed1;
+  width: 600px;
+  height: 50px;
+}
 
+th{
+  border: solid #333;
+  padding: 5px 10px;
+  width: 150px;
+  padding-left: 10px;
+  font-weight: bold;
+  box-sizing: border-box;
+  height: 50px;
+}
+
+td{
+  border: solid #333;
+  padding: 5px 10px;
+  padding-left: 10px;
+  font-weight: bold;
+  box-sizing: border-box
+}
+
+/*------- foot_nav_list -------*/
 .foot_nav_list{
   display: flex;
   justify-content: space-between;
@@ -96,6 +127,7 @@ footer p {
   margin:60px 0 20px 0;
   color: gray;
 }
+
 
 
 /*-------- response ---------*/
@@ -118,13 +150,18 @@ footer p {
     font-size: 14px;
   }
 
-  #slider{
-    width: 100%;
+ .link_bar{
+   display: block;
+ }
+
+ .link_item{
+  margin-bottom: 10px;
+ }
+
+  table{
+    width: 300px;
   }
 
-  img{
-    width: 100%;
-  }
 }
 
 /*------- tablet -------*/
@@ -133,7 +170,4 @@ footer p {
     width: 90%;
     }
 
-    #slider{
-      width: 100%;
-    }
 }

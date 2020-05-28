@@ -3,78 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <title>Hans Hotel東京</title> -->
   <title>Hans Hotel Japan</title>
   <link rel="stylesheet" href="css/reset.css">
-  <link href="css/style.css?v=<?php echo time(); ?>" rel="stylesheet" type="text/css" />
+  <link href="css/main.css?v=<?php echo time(); ?>" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <header>
-    <div class="container">
-        <div class="mainbg">Hans Hotel Japan</div>
-    </div>
-  </header>
+  <!-------- header ---------->
+  <div class="container">
+    <header>
+          <h1>Hans Hotel Japan</h1>
+          <p>〒401-0501　山梨県 南都留郡 山中湖村 山中 1445-1
+          </p>
+          <p>Tel 0555-62-3901　　Fax 0555-62-3902</p>
+    </header>
   
-
-
-  <section class="form">
-    <form method="post" action="booking_insert.php" >
-      <section class="guest data"> 
-        <h2>BOOKING & CONTACT</h2>
-        <hr>
-        <ul>
-        <li><label for="name">Name</label>
-        <input type="text" name="name" id="name"></li>
-        <li>  <label for="email">Email</label>
-        <input type="email" name="email" id="email"></li>
-        <li> <label for="telephone">Telephone</label>
-        <input type="text" name="telephone" id="telephone"></li>
-        <li>  <label for="address">Address</label>
-        <input type="text" name="address" id="address"></li>
-        <li>  <label for="country">Country</label>
-        <input type="text" name="country" id="country"></li>
+    <!------------- nav ------------->
+      <nav>
+        <ul class="nav_list">
+          <li class="nav_item"><a href="guestroom.php">客室情報</a></li>
+          <li class="nav_item"><a href="equipment.php">施設.サービス</a></li>
+          <li class="nav_item"><a href="restaurant.php">レストラン</a></li>
+          <li class="nav_item"><a href="access.php">アクセス</a></li>
+          <li class="nav_item"><a href="booking.php">Booking</a></li>
         </ul>
-      </section>
+      </nav>
 
-      <section class="details">
-        <h2>DETAILS</h2>
-        <hr>
-        <ul>
-        <li><label for="people">People</label>
-        <input type="number" name="people" id="people"></li>
-        <li><label for="arrive">Arrive</label>
-        <input type="date" name="arrive" id="arrive"></li>
-        <li><label for="depart">Depart</label>
-        <input type="date" name="depart" id="depart"></li>
-
-
-        
-        <li class="roomtitle">Room type</li>
-        <li class="room_type">
-          <div class="room">
-            <label for="single">SNG</label>
-            <input type="radio" name="room_type" value="single" id="single">
-            <label for="twin">TWN</label>
-            <input type="radio" name="room_type" value="twin" id="twin">
-            <label for="trp">TRP</label>
-            <input type="radio" name="room_type" value="triple" id="trp">
-            <label for="quad">QUAD</label>
-            <input type="radio" name="room_type" value="quad" id="quad">
-          </div>
-        </li>
-
-        <li><label for="others">Others</label>
-        <textarea name="others" id="others" cols="30" rows="10"></textarea></li>
-
-        <button type="submit" class="btn">Submit</button>
+    <!---------- slider --------->
+      <div id="slider">
+        <ul class="slides">
+          <li class="slide"><img src="img/mainbg.jpg" alt=""></li>
+          <li class="slide"><img src="img/pic00.JPG" alt=""></li>
+          <li class="slide"><img src="img/pic01.JPG" alt=""></li>
+          <li class="slide"><img src="img/pic02.jpeg" alt=""></li>
+          <li class="slide"><img src="img/pic03.jpeg" alt=""></li>
+          <li class="slide"><img src="img/pic04.jpeg" alt=""></li>
+          <li class="slide"><img src="img/pic05.jpeg" alt=""></li>
+          <li class="slide"><img src="img/pic06.jpeg" alt=""></li>
+          <li class="slide"><img src="img/pic07.jpeg" alt=""></li>
+          <li class="slide"><img src="img/pic08.jpeg" alt=""></li>
+          <li class="slide"><img src="img/mainbg.jpg" alt=""></li>
         </ul>
-      </section>
-    </form>
-  </section>
+      </div>
 
-  <footer>
-    <p>(c) Hans Hotel.com</p>
-  </footer>
+  <!------------ textbox -------->
+    <div class="text_box">
+      <p>ようこそ、日本一！世界一！富士山に近い湖、山中湖へ</p>
+      <p>山中湖畔に新しく誕生したホテル“SUN PLAZA HOTEL 富士山中湖</p>
+      <p>世界各国から富士山へ集まるゲストをもてなすために作られたレイクサイドホテルです</p>
+      <p>日本式の大浴場と露天風呂を備え、美味しい食事とおもてなしで旅の疲れを癒します。</p>
+    </div>
+
+  <!----------- nav ------------>
+
+      <nav>
+          <ul class="foot_nav_list">
+            <li class="nav_item"><a href="guestroom.php">客室情報</a></li>
+            <li class="nav_item"><a href="equipment.php">施設.サービス</a></li>
+            <li class="nav_item"><a href="restaurant.php">レストラン</a></li>
+            <li class="nav_item"><a href="access.php">アクセス</a></li>
+            <li class="nav_item"><a href="booking.php">Booking</a></li>
+          </ul>
+      </nav>
+  
+  <!--------- footer ---------->
+    <footer>
+      <p>(c) Hans Hotel.com</p>
+    </footer>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</div>
 </body>
 </html>

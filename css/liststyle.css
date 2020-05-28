@@ -2,39 +2,48 @@
   box-sizing: border-box;
 }
 
-body{
-  width: 1080px;
-  margin: 0 auto;
+body {
   font-family: Verdana, sans-serif;
+  background: #eeeeee;
+  color: #333;
 }
 
-.container {
-  width: 1080px;
-  height: 400px;
-  background: url("../img/mainbg.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+.container{
+  width: 1000px;
+  margin: 0 auto;
 }
 
-.mainbg{
-  font-weight: normal;
-  font-size: 35px;
+header{
+  text-align: center;
+  background-color: #333;
   color: #fff;
-  padding: 30px;
-  line-height: 500px;
+  padding: 10px;
+  border: 2px #fff solid;
+  margin-bottom: 20px;
 }
 
+h1{
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+header p{
+  margin-bottom: 10px;
+}
+
+table{
+  width: 100%;
+}
 
 .table th {
-  border: solid #614b2b;
-  background-color: #6d5838;
+  border: solid #333;
+  background-color: #333;
   color: whitesmoke;
   padding: 5px 10px;
 }
 /* 追加データ */
 .table td {
-  border: solid #6d5838;
+  border: solid #333;
   padding: 0 3px;
   text-align: center;
 }

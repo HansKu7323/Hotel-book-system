@@ -35,63 +35,50 @@ if($status==false){
     '<td>'.$result["indate"].'</td>'.
 
     '</tr>';
- 
-    // $viewName .= $result["name"];
-    // $viewEmail .= $result["email"];
-    // $viewTelephone .= $result["telephone"];
-    // $viewCountry .= $result["country"];
-    // $viewPeople .= $result["people"];
-    // $viewArrive .= $result["arrive"];
-    // $viewDepart .= $result["depart"];
-    // $viewRomm .= $result["romm"];
-    // $viewOthers .= $result["others"];
-    // $viewIndate .= $result["indate"];
   }
 }
 ?>
-
 
 <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <title>Hans Hotel東京</title> -->
   <title>Hans Hotel Japan</title>
   <link rel="stylesheet" href="css/reset.css">
   <link href="css/liststyle.css?v=<?php echo time(); ?>" rel="stylesheet" type="text/css" />
 
 </head>
 <body>
-  <header>
+    <!--------------------- header ---------------------------->
     <div class="container">
-        <div class="mainbg">Hans Hotel Japan</div>
+      <header>
+        <h1>Hans Hotel Japan</h1>
+        <p>〒401-0501　山梨県 南都留郡 山中湖村 山中 1445-1</p>
+        <p>Tel 0555-62-3901　　Fax 0555-62-3902</p>
+      </header>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th class="th1">id</th>
+            <th class="th2">Name</th>
+            <th class="th3">Email</th>
+            <th class="th4">Telephone</th>
+            <!-- <th class="th5">country</th> -->
+            <th class="th6">N.O.P</th>
+            <th class="th7">Arrive date</th>
+            <th class="th8">Depart date</th>
+            <th class="th9">Room</th>
+            <th class="th10">others</th>
+            <th class="th10">input date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <?=$view?>
+        </tbody>
+      </table>
     </div>
-  </header>
-
-  <table class="table">
-          <thead>
-            <tr>
-              <th class="th1">id</th>
-              <th class="th2">Name</th>
-              <th class="th3">Email</th>
-              <th class="th4">Telephone</th>
-              <!-- <th class="th5">country</th> -->
-              <th class="th6">N.O.P</th>
-              <th class="th7">Arrive date</th>
-              <th class="th8">Depart date</th>
-              <th class="th9">Room</th>
-              <th class="th10">others</th>
-              <th class="th10">input date</th>
-            </tr>
-          </thead>
-          <tbody>
-              <?=$view?>
-            
-          
-          </tbody>
-        </table>
-
 
 </body>
 </html>

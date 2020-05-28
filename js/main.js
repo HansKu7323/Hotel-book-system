@@ -4,7 +4,7 @@ $(function() {
 
   var width = 720;
   var animationSpeed = 1000;
-  var pause = 2500;
+  var pause = 3000;
   var currentSlide = 1; 
 
   var slider = $('#slider');

@@ -44,42 +44,53 @@ margin: 25px 0;
   text-decoration: none;
 }
 
-
-
-/* ------ slider -------- */
-#slider{
-  margin: 0 auto ;
-  width: 720px;
-  height: 400px;
-  overflow: hidden;
+.guestroom{
+  margin: 0 0 30px 0;
 }
 
-#slider .slides{
-  display: block;
-  width: 7920px;
-  height: 400px;
-  margin: 0;
-  padding: 0;
-}
-
-#slider .slide{
-  float: left;
-  list-style: none;
-  width: 720px;
-  height: 400px;
-}
-
-img{
+.guestroom>img{
   width: 100%;
 }
 
-/*------- 紹介 -------*/
+h2{
+  font-size: 35px;
+  font-weight: normal;
+}
+
+.room_infomation{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 0 30px 0;
+}
+
+.room_type{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.room_part{
+  width: 300px;
+  line-height: 1.75em;
+}
+
+.room_part>img{
+  width: 100%;
+}
+
+
+
+
+
+
+/* 紹介 */
 .text_box{
   text-align: center;
   line-height: 26px;
   margin: 0 0 20px 0;
 }
-
 
 .foot_nav_list{
   display: flex;
@@ -88,8 +99,7 @@ img{
   border-bottom: 1px #333 solid;
 }
 
-
-/*-------- footer -------*/
+/*------- footer -------*/
 footer p {
   text-align: center;
   font-size: 14px;
@@ -98,9 +108,7 @@ footer p {
 }
 
 
-/*-------- response ---------*/
-
-/*------- telephon -------*/
+/*------- response --------*/
 @media screen and (max-width: 500px){
   .container{
     width: 90%;
@@ -109,7 +117,6 @@ footer p {
   .nav_list{
     display: block;
   }
-
   .foot_nav_list{
     display: block;
   }
@@ -122,13 +129,10 @@ footer p {
     width: 100%;
   }
 
-  img{
-    width: 100%;
-  }
 }
 
-/*------- tablet -------*/
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1000px){
+
   .container{
     width: 90%;
     }
